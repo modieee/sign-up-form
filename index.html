@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="left-section">
+            <div class="banner">
+                <img src="/images/odin-lined.png" alt="The Odin Project Logo">
+                <span class="logo-text">odin</span>
+            </div>
+        </section>
+        <div>
+            <section class="right-section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus assumenda incidunt nulla, iusto ducimus id est, magni ea quas iste. Iste culpa non eum tenetur voluptate odio nostrum sequi.</p>
+                <p>You know you want to.</p>
+                <form action="#" method="#">
+                    <div class="form-wrapper">
+                        <legend>Let's do this!</legend>
+
+                        <label for="first_name">*First Name:</label>
+                        <input type="text" name="first_name" id="first_name" required>
+
+                        <label for="last_name">*Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" required>
+
+                        <label for="email">*Email:</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+
+                        <label for="phone_number">*Phone Number:</label>
+                        <input type="tel" name="phone_number" id="phone_number" required max="11" pattern="[0-9]{11}" placeholder="0801234567890">
+
+                        <label for="password">*Password:</label>
+                        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" required 
+                        
+                        title="password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character (!@#$%^&*)."
+                        >
+
+                        <label for="reconfirm_password">Reconfirm Password:</label>
+                        <input type="password" name="reconfirm_password" id="reconfirm_password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Aa-z\d!@#$%^&*]{8,}" required 
+                        
+                        title="password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character (!@#$%^&*)."
+                        >
+                    </div>
+                    <button class="">Create Account</button>
+                </form>
+                <p>Already have an account?<span>Log in</span></p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
