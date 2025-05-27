@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Odin Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,40 +19,50 @@
             </div>
         </section>
         <div>
-            <section class="right-section">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus assumenda incidunt nulla, iusto ducimus id est, magni ea quas iste. Iste culpa non eum tenetur voluptate odio nostrum sequi.</p>
-                <p>You know you want to.</p>
-                <form action="#" method="#">
+            <section class="right-section right-section-container">
+                <p class="right-section__copy first-paragraph">Don't wait to start your journey! Take the first step today and unlock a world of opportunities waiting just for you. This is the moment you've been waiting for. Sign up now to get started.</p>
+                <p class="right-section__copy">You know you want to.</p>
+
+                <form action="#" method="#" class="form form-row">
                     <div class="form-wrapper">
                         <legend>Let's do this!</legend>
 
-                        <label for="first_name">*First Name:</label>
-                        <input type="text" name="first_name" id="first_name" required>
-
-                        <label for="last_name">*Last Name:</label>
-                        <input type="text" name="last_name" id="last_name" required>
-
-                        <label for="email">*Email:</label>
-                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
-
-                        <label for="phone_number">*Phone Number:</label>
-                        <input type="tel" name="phone_number" id="phone_number" required max="11" pattern="[0-9]{11}" placeholder="0801234567890">
-
-                        <label for="password">*Password:</label>
-                        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" required 
-                        
-                        title="password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character (!@#$%^&*)."
-                        >
-
-                        <label for="reconfirm_password">Reconfirm Password:</label>
-                        <input type="password" name="reconfirm_password" id="reconfirm_password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Aa-z\d!@#$%^&*]{8,}" required 
-                        
-                        title="password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character (!@#$%^&*)."
-                        >
+                        <div class="form-layout">
+                            <div class="form-layout__control">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" id="first_name" required placeholder="">
+                            </div>
+                            <div class="form-layout__control">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="last_name" required placeholder="">
+                            </div>
+                            <div class="form-layout__control">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-layout__control">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="tel" name="phone_number" id="phone_number" required max="11" pattern="[0-9]{11}" placeholder="0801234567890">
+                            </div>
+                            <div class="form-layout__control">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" required placeholder=""
+                            
+                                title="password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character (!@#$%^&*)."
+                                >
+                            </div>
+                            <div class="form-layout__control">
+                                <label for="reconfirm_password">Confirm Password</label>
+                                <input type="password" name="reconfirm_password" id="reconfirm_password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Aa-z\d!@#$%^&*]{8,}" required placeholder=""
+                            
+                                title="password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character (!@#$%^&*)."
+                                >
+                            </div>
+                        </div>
                     </div>
-                    <button class="">Create Account</button>
+                    <button type="submit" class="">Create Account</button>
                 </form>
-                <p>Already have an account?<span>Log in</span></p>
+                <p>Already have an account?<span> Log in</span></p>
             </section>
         </div>
     </main>
