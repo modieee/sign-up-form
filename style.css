@@ -26,13 +26,18 @@ body {
 
 }
 
+a {
+    color: #FFF;
+}
+
 /* LEFT SECTION OF THE PAGE */
 .left-section {
-    width: 40%;
+    width: 50%;
     background-image: url(images/halie-west-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: #FFF;
 }
 
 .banner {
@@ -48,14 +53,21 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-img[src="/images/odin-lined.png"] {
+img[src="images/odin-lined.png"] {
     width: 80px;
+    height: 100px;
 }
 .logo-text {
     color: #FFF;
     font-size: 5rem;
     font-family: Norse-Bold;
     text-transform: uppercase;
+}
+
+.backgorund-image-credit {
+    position: relative;
+    top: 510px;
+    left: 70px;
 }
 
 /* RIGHT SECTION OF THE PAGE */
